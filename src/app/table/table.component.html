@@ -1,0 +1,50 @@
+
+<br><br>
+<input placeholder="type password" #passw>
+<button (click)="fun2($passw)">show</button>
+
+<div *ngIf="passw"> 
+  <table class="table table-hover">
+  <thead>
+      <tr>
+        <th>Sr_No</th>
+        <th>Name</th>
+        <th>Trade</th>
+        <th>Mobile</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+<tr *ngFor="let contact of contactlist; let i=index">
+<td >{{contact.id}}</td>
+<td>{{contact.name}}</td>
+<td>{{contact.trade}}</td>
+<td>{{contact.mobile}}</td>
+   <td><button class="btn btn-success" id="a" (click)="editemp(i)">Edit</button>&nbsp;&nbsp;
+    <button (click)="deleteContact(contact.id)" class="btn btn-danger">Remove</button></td>
+  
+</tr>
+</table>  </div>
+<div >
+    <form action="" >
+      <!-- <span *ngIf="gate"> -->
+<input type="number" [(ngModel)]="model.id" name="Sr" placeholder="Sr.No"  >&nbsp;
+<input type="text" [(ngModel)]="model.name" name="name" placeholder="Name" >&nbsp;
+<input type="text" [(ngModel)]="model.trade" name="trade" placeholder="Trade" >&nbsp;
+<input type="number" [(ngModel)]="model.mobile" name="Mobile" placeholder="Mobile No." >&nbsp;
+
+<button class="btn btn-info" type="submit" (click)="addemp()">Add Data</button>&nbsp;
+<button class="btn btn-warning" (click)="upemp()" (click)="fun3()">Update</button>
+</form>
+</div>
+<input type="text" [(ngModel)]="names">{{names}}
+<div>
+  <h1 *ngIf="aa; else elseblock">Aman</h1>
+  <ng-template #elseblock>
+  <h1>Bishnoi</h1></ng-template>
+</div>
+<div [ngSwitch]="color">
+<div *ngSwitchCase="'red'"><button (click)="fun4()">Red</button>{{sss}}</div>
+<div *ngSwitchCase="'black'"><button (click)="fun5()">Black</button>{{ssss}}</div>
+<div *ngSwitchDefault><button (click)="fun6()">Exit</button>{{z}} </div>
+
+</div>

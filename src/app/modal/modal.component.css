@@ -1,0 +1,43 @@
+#a{
+    background:url('images/pic.jpg');
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    margin-top: 4.5px;
+}
+#modal{
+    position: absolute;
+    left:45%;
+    margin-top: 15%;
+    transform:translate(-30%,-30%);
+    height: 470px;
+    width:400px;
+   background-color:#555;
+ border-radius: 10%;
+ 
+ 
+  
+}
+input{
+    margin-left: 10%;
+    border-radius: 8px;
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+button,h1{
+    margin-left: 29%;
+   
+    height: 50px;
+    width: 140px;
+    color: aliceblue;
+    text-align: center;
+}
+#icon{
+font-size: 32px;
+ color: aliceblue;
+ 
+}
+::-webkit-input-placeholder{
+    padding-left: 10px;
+}

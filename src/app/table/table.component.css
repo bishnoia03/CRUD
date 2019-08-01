@@ -1,0 +1,13 @@
+.check{
+    width: 30px; 
+    height: 30px; 
+    cursor: auto ;
+    margin: 5px 10px 5px 10px;
+    overflow: auto;
+   
+}
+#a{
+    width: 70px;
+    height: 33px;
+    margin-left: -36px;
+}
